@@ -23,13 +23,13 @@ let isActive = false;
 
 const toggleTheme = () => {
   if (!isActive) {
-    darkMode();
     isActive = true;
     themeIcon.classList.replace('fa-sun', 'fa-moon');
+    darkMode();
   } else {
-    lightMode();
     isActive = false;
     themeIcon.classList.replace('fa-moon', 'fa-sun');
+    lightMode();
   }
 };
 
@@ -67,10 +67,12 @@ window.addEventListener('DOMContentLoaded', () => {
     htmlTag.classList.add('dark');
     // text.innerText = 'Dark Mode';
     // switchBtn.checked = true;
+    isActive = true;
     themeIcon.classList.replace('fa-sun', 'fa-moon');
   } else {
     htmlTag.classList.remove('dark');
     // text.innerText = 'Light Mode';
+    isActive = false;
     themeIcon.classList.replace('fa-moon', 'fa-sun');
   }
 });
