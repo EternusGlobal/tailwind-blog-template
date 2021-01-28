@@ -57,13 +57,13 @@
   width: 11px;
   left: 4px;
   bottom: 4px;
-  background-color: #111827;
+  background-color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #f59e0b;
+  background-color: #3b82f6;
 }
 
 input:focus + .slider {
@@ -78,9 +78,9 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 0;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+  border-radius: 0;
 }

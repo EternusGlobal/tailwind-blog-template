@@ -19,33 +19,45 @@
 
     <title>Document</title>
   </head>
-  <body class="dark:bg-gray-800 bg-white xl:p-0 py-2 px-4">
+  <body class="dark:bg-gray-800 bg-white xl:p-0">
     <!-- Top Bar -->
 
-    <section class="bg-gray-900 py-3">
+    <section class="bg-gray-900 py-3 font-poppins">
       <div
-        class="container mx-auto max-w-screen-xl flex justify-evenly md:justify-between items-center px-2"
+        class="container mx-auto max-w-screen-xl flex flex-col sm:flex-row justify-evenly md:justify-between items-center px-2"
       >
-        <div class="text-white flex hidden md:block">
-          <i class="fab fa-facebook-f mr-2"></i>
-          <i class="fab fa-twitter mr-2"></i>
-          <i class="fab fa-instagram mr-2"></i>
-          <i class="fab fa-pinterest-p mr-2"></i>
+        <div class="text-white flex block">
+          <a class="cursor-pointer" href="#"
+            ><i class="fab fa-facebook-f mr-2"></i
+          ></a>
+          <a class="cursor-pointer" href="#"
+            ><i class="fab fa-twitter mr-2"></i
+          ></a>
+          <a class="cursor-pointer" href="#"
+            ><i class="fab fa-instagram mr-2"></i
+          ></a>
+          <a class="cursor-pointer" href="#"
+            ><i class="fab fa-pinterest-p mr-2"></i
+          ></a>
 
-          <i class="fab fa-youtube mr-2"></i>
+          <a class="cursor-pointer" href=""
+            ><i class="fab fa-youtube mr-2"></i
+          ></a>
         </div>
         <div class="flex flex-col sm:flex-row items-center justify-between">
-          <div class="bg-white px-2 py-1 mr-0 mb-2 sm:mr-10 sm:mb-0">
-            <i class="fas fa-search text-gray-900"></i>
+          <div
+            class="bg-white px-2 py-1 mr-0 mt-2 sm:mr-10 sm:mb-0 rounded-full"
+          >
+            <i class="fas fa-search text-gray-900 mx-3"></i>
             <input class="outline-none" type="text" placeholder="Search" />
           </div>
-          <div class="flex items-center">
+          <!-- <div class="flex items-center">
             <label class="switch mr-3">
               <input class="darkmode" type="checkbox" />
               <span class="slider round"></span>
             </label>
             <h4 class="text-white theme-label">Dark Mode</h4>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -59,15 +71,23 @@
         <img class="w-60" src="./img//header pic.png" alt="" />
       </div>
       <div class="text-center mt-2">
-        <h4 class="text-lg font-semibold dark:text-white">Sarah M</h4>
-        <p class="italic dark:text-white">Designer/Vlogger</p>
+        <h4
+          class="text-xl font-semibold text-gray-900 dark:text-white font-poppins"
+        >
+          Sarah M
+        </h4>
+        <p class="font-roboto font-semibold text-blue-500 italic">
+          Designer/Vlogger
+        </p>
       </div>
     </header>
 
     <!-- Navigation -->
-    <nav class="container mx-auto max-w-screen-xl">
+    <nav
+      class="container mx-auto max-w-screen-xl font-poppins font-semibold text-gray-900 text-lg px-4 lg:px-0 z-20 sticky top-2"
+    >
       <div
-        class="bg-white py-2 shadow-md border-t border-gray-200 dark:bg-gray-900 dark:text-white"
+        class="bg-white py-2 shadow-md border border-gray-200 rounded-lg dark:bg-gray-900 dark:text-white dark:border-gray-900"
       >
         <div
           class="md:hidden md:order-last block order-first text-center hamburger"
@@ -78,11 +98,11 @@
           class="md:flex md:flex-row md:justify-evenly md:items-center flex flex-col justify-center items-center nav-menu hidden"
         >
           <li class="px-6 py-2">Home</li>
-          <div class="h-2 w-2 bg-gray-200"></div>
+          <div class="h-2 w-2 bg-blue-500"></div>
           <li class="px-6 py-2">About Me</li>
-          <div class="h-2 w-2 bg-gray-200"></div>
+          <div class="h-2 w-2 bg-gray-200 bg-blue-500"></div>
           <li class="px-6 py-2">Collections</li>
-          <div class="h-2 w-2 bg-gray-200"></div>
+          <div class="h-2 w-2 bg-gray-200 bg-blue-500"></div>
           <li class="px-6 py-2">Contact</li>
         </ul>
       </div>
@@ -90,27 +110,29 @@
 
     <!-- Grid Wrapp-->
     <div
-      class="container mx-auto max-w-screen-xl grid grid-cols-1 gap-2 lg:grid-cols-7 lg:gap-4"
+      class="container mx-auto max-w-screen-xl grid grid-cols-1 gap-2 lg:grid-cols-7 lg:gap-4 px-4 lg:px-0"
     >
       <!-- Main -->
       <main class="col-auto lg:col-span-5">
         <!-- Sub Header -->
-        <section class="mt-10 shadow-sm mr-0 lg:mr-4">
+        <section class="mt-10 shadow-sm mr-0 lg:mr-4 text-gray-900">
           <div
-            class="sub-header flex justify-center items-center h-full p-5 sm:p-20 lg:p-52"
+            class="sub-header flex justify-center items-center h-full p-5 sm:p-20 lg:p-52 shadow-lg rounded-lg"
           >
             <div
-              class="bg-white p-2.5 sm:p-10 text-center dark:bg-gray-900 dark:text-white"
+              class="bg-white px-2.5 py-5 sm:p-10 text-center dark:bg-gray-900 dark:text-white rounded-lg"
             >
-              <h3 class="font-semibold text-xl mb-4">Lorem Ipsum</h3>
-              <h2 class="font-semibold text-2xl mb-4">
+              <h3 class="font-semibold text-lg mb-4 font-poppins">
+                Lorem Ipsum
+              </h3>
+              <h2 class="font-semibold text-xl mb-4 font-poppins">
                 Lorem Ipsum Dolor Sit Amet
               </h2>
-              <p class="text-sm italic">
+              <p class="font-roboto text-sm italic">
                 Lorem ipsum, dolor sit amet consectetur.
               </p>
               <button
-                class="inline-block mt-4 border border-gray-200 px-4 py-2"
+                class="font-poppins font-semibold rounded inline-block mt-4 text-white bg-gray-900 hover:bg-blue-500 hover:text-white transition-colors px-4 py-2 dark:bg-blue-500 dark:hover:bg-white dark:hover:text-blue-500"
               >
                 Read more
               </button>
@@ -119,42 +141,51 @@
         </section>
 
         <!-- Articles -->
-        <section class="mt-10 mr-0 lg:mr-4 shadow-sm pb-4">
+        <section
+          class="mt-10 mr-0 lg:mr-4 shadow-xl rounded-lg overflow-hidden text-gray-900"
+        >
           <div
-            class="flex flex-col md:flex-row justify-center items-center bg-white dark:bg-gray-900 dark:text-white"
+            class="flex flex-col md:flex-row justify-center items-center bg-white dark:bg-gray-900 dark:text-white border border-gray-200 dark:border-gray-900"
           >
             <img
-              class="w-full h:100 md:w-80 md:h-80 object-cover"
+              class="w-full h:full md:w-80 md:h-80 object-cover"
               src="./img/feature.jpg"
               alt=""
             />
             <div class="text-center p-2.5 sm:p-10">
               <div>
-                <h3 class="font-bold text-xl mb-4">Lorem, ipsum dolor amet.</h3>
-                <div>
+                <h3 class="font-bold text-lg mb-4 font-poppins">
+                  Lorem, ipsum dolor amet.
+                </h3>
+                <div class="font-roboto">
                   <span
-                    class="py-1 px-3 rounded-full bg-gray-200 mr-2 dark:bg-white dark:text-gray-900"
+                    class="py-1 px-3 rounded-full text-white bg-blue-500 mr-2"
                     >Lorem Ipsum</span
                   >
-                  <span
-                    ><i class="far fa-calendar-alt mr-2"></i>Lorem Ipsum</span
+                  <span class="text-gray-900 dark:text-white"
+                    ><i class="far fa-calendar-alt mr-2 text-blue-500"></i>Lorem
+                    Ipsum</span
                   >
                 </div>
-                <p class="mt-4">
+                <p class="mt-4 font-roboto">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Soluta, tempora!
                 </p>
                 <a
-                  class="mt-4 font-semibold border-b border-gray-900 inline-block"
+                  class="mt-4 font-semibold border-b border-gray-900 inline-block cursor-pointer font-poppins text-gray-900 transition-colors hover:text-blue-500 hover:border-blue-500 dark:text-white dark:border-white dark:hover:text-blue-500 dark:hover:border-blue-500"
                 >
                   Read more
                 </a>
               </div>
-              <div class="flex justify-between mt-10">
-                <span><i class="fas fa-share-alt mr-2"></i>Share</span>
+              <div class="flex justify-between mt-10 text-blue-500 font-roboto">
+                <span
+                  class="text-gray-900 cursor-pointer font-poppins font-semibold dark:text-white"
+                  ><i class="fas fa-share-alt mr-2 text-blue-500"></i
+                  >Share</span
+                >
                 <div>
-                  <i class="far fa-heart mr-2"></i>
-                  <i class="far fa-comments"></i>
+                  <i class="far fa-heart mr-2 cursor-pointer"></i>
+                  <i class="far fa-comments cursor-pointer"></i>
                 </div>
               </div>
             </div>
@@ -166,23 +197,26 @@
           class="mt-10 mr-0 lg:mr-4 grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           <div
-            class="flex flex-col justify-center items-center shadow-sm bg-white dark:bg-gray-900 dark:text-white"
+            class="flex flex-col justify-center text-gray-900 items-center shadow-xl rounded-lg overflow-hidden overflow-hidden bg-white dark:bg-gray-900 dark:text-white"
           >
             <img
               class="w-full h-100 md:h-60 object-cover"
               src="./img/feature.jpg"
               alt=""
             />
-            <div class="text-left p-4">
+            <div class="text-left p-6">
               <div>
-                <h3 class="font-bold text-xl mb-4">Lorem, ipsum dolor amet.</h3>
-                <div>
+                <h3 class="font-bold font-poppins text-lg mb-4">
+                  Lorem, ipsum dolor amet.
+                </h3>
+                <div class="font-roboto">
                   <span
-                    class="py-1 px-3 rounded-full bg-gray-200 mr-2 dark:bg-white dark:text-gray-900"
+                    class="py-1 px-3 rounded-full bg-blue-500 mr-2 text-white"
                     >Lorem Ipsum</span
                   >
                   <span
-                    ><i class="far fa-calendar-alt mr-2"></i>Lorem Ipsum</span
+                    ><i class="far fa-calendar-alt mr-2 text-blue-500"></i>Lorem
+                    Ipsum</span
                   >
                 </div>
                 <p class="mt-4">
@@ -190,31 +224,35 @@
                   Soluta, tempora!
                 </p>
                 <a
-                  class="mt-4 font-semibold border-b border-gray-900 inline-block"
+                  class="font-poppins text-gray-900 mt-4 font-semibold border-b border-gray-900 inline-block cursor-pointer transition-colors hover:text-blue-500 hover:border-blue-500 dark:text-white dark:border-white dark:hover:text-blue-500 dark:hover:border-blue-500"
                 >
                   Read more
                 </a>
               </div>
             </div>
           </div>
+
           <div
-            class="flex flex-col justify-center items-center shadow-sm bg-white dark:bg-gray-900 dark:text-white"
+            class="flex flex-col justify-center text-gray-900 items-center shadow-xl rounded-lg overflow-hidden overflow-hidden bg-white dark:bg-gray-900 dark:text-white"
           >
             <img
               class="w-full h-100 md:h-60 object-cover"
               src="./img/feature.jpg"
               alt=""
             />
-            <div class="text-left p-4">
+            <div class="text-left p-6">
               <div>
-                <h3 class="font-bold text-xl mb-4">Lorem, ipsum dolor amet.</h3>
-                <div>
+                <h3 class="font-bold font-poppins text-lg mb-4">
+                  Lorem, ipsum dolor amet.
+                </h3>
+                <div class="font-roboto">
                   <span
-                    class="py-1 px-3 rounded-full bg-gray-200 mr-2 dark:bg-white dark:text-gray-900"
+                    class="py-1 px-3 rounded-full bg-blue-500 mr-2 text-white"
                     >Lorem Ipsum</span
                   >
                   <span
-                    ><i class="far fa-calendar-alt mr-2"></i>Lorem Ipsum</span
+                    ><i class="far fa-calendar-alt mr-2 text-blue-500"></i>Lorem
+                    Ipsum</span
                   >
                 </div>
                 <p class="mt-4">
@@ -222,31 +260,35 @@
                   Soluta, tempora!
                 </p>
                 <a
-                  class="mt-4 font-semibold border-b border-gray-900 inline-block"
+                  class="font-poppins text-gray-900 mt-4 font-semibold border-b border-gray-900 inline-block cursor-pointer transition-colors hover:text-blue-500 hover:border-blue-500 dark:text-white dark:border-white dark:hover:text-blue-500 dark:hover:border-blue-500"
                 >
                   Read more
                 </a>
               </div>
             </div>
           </div>
+
           <div
-            class="flex flex-col justify-center items-center shadow-sm bg-white dark:bg-gray-900 dark:text-white"
+            class="flex flex-col justify-center text-gray-900 items-center shadow-xl rounded-lg overflow-hidden overflow-hidden bg-white dark:bg-gray-900 dark:text-white"
           >
             <img
               class="w-full h-100 md:h-60 object-cover"
               src="./img/feature.jpg"
               alt=""
             />
-            <div class="text-left p-4">
+            <div class="text-left p-6">
               <div>
-                <h3 class="font-bold text-xl mb-4">Lorem, ipsum dolor amet.</h3>
-                <div>
+                <h3 class="font-bold font-poppins text-lg mb-4">
+                  Lorem, ipsum dolor amet.
+                </h3>
+                <div class="font-roboto">
                   <span
-                    class="py-1 px-3 rounded-full bg-gray-200 mr-2 dark:bg-white dark:text-gray-900"
+                    class="py-1 px-3 rounded-full bg-blue-500 mr-2 text-white"
                     >Lorem Ipsum</span
                   >
                   <span
-                    ><i class="far fa-calendar-alt mr-2"></i>Lorem Ipsum</span
+                    ><i class="far fa-calendar-alt mr-2 text-blue-500"></i>Lorem
+                    Ipsum</span
                   >
                 </div>
                 <p class="mt-4">
@@ -254,31 +296,35 @@
                   Soluta, tempora!
                 </p>
                 <a
-                  class="mt-4 font-semibold border-b border-gray-900 inline-block"
+                  class="font-poppins text-gray-900 mt-4 font-semibold border-b border-gray-900 inline-block cursor-pointer transition-colors hover:text-blue-500 hover:border-blue-500 dark:text-white dark:border-white dark:hover:text-blue-500 dark:hover:border-blue-500"
                 >
                   Read more
                 </a>
               </div>
             </div>
           </div>
+
           <div
-            class="flex flex-col justify-center items-center shadow-sm bg-white dark:bg-gray-900 dark:text-white"
+            class="flex flex-col justify-center text-gray-900 items-center shadow-xl rounded-lg overflow-hidden overflow-hidden bg-white dark:bg-gray-900 dark:text-white"
           >
             <img
               class="w-full h-100 md:h-60 object-cover"
               src="./img/feature.jpg"
               alt=""
             />
-            <div class="text-left p-4">
+            <div class="text-left p-6">
               <div>
-                <h3 class="font-bold text-xl mb-4">Lorem, ipsum dolor amet.</h3>
-                <div>
+                <h3 class="font-bold font-poppins text-lg mb-4">
+                  Lorem, ipsum dolor amet.
+                </h3>
+                <div class="font-roboto">
                   <span
-                    class="py-1 px-3 rounded-full bg-gray-200 mr-2 dark:bg-white dark:text-gray-900"
+                    class="py-1 px-3 rounded-full bg-blue-500 mr-2 text-white"
                     >Lorem Ipsum</span
                   >
                   <span
-                    ><i class="far fa-calendar-alt mr-2"></i>Lorem Ipsum</span
+                    ><i class="far fa-calendar-alt mr-2 text-blue-500"></i>Lorem
+                    Ipsum</span
                   >
                 </div>
                 <p class="mt-4">
@@ -286,7 +332,7 @@
                   Soluta, tempora!
                 </p>
                 <a
-                  class="mt-4 font-semibold border-b border-gray-900 inline-block"
+                  class="font-poppins text-gray-900 mt-4 font-semibold border-b border-gray-900 inline-block cursor-pointer transition-colors hover:text-blue-500 hover:border-blue-500 dark:text-white dark:border-white dark:hover:text-blue-500 dark:hover:border-blue-500"
                 >
                   Read more
                 </a>
@@ -313,21 +359,23 @@
         <!-- About Me -->
         <section class="mt-10 p-0 sm:p-6 md:px-20 md:py-10 lg:p-0">
           <div
-            class="bg-gray-200 p-6 text-center dark:bg-gray-900 dark:text-white"
+            class="bg-gray-200 p-6 text-center text-gray-900 dark:bg-gray-900 dark:text-white shadow-md rounded-lg"
           >
             <h3
-              class="uppercase border-b border-gray-900 inline-block dark:border-white"
+              class="font-poppins font-semibold text-lg text-gray-900 uppercase border-b border-gray-900 inline-block dark:border-white dark:text-white"
             >
               About Me
             </h3>
-            <h4 class="text-lg font-semibold mt-4">Hello, I'm Sarah</h4>
-            <p class="mt-4">
+            <h4 class="font-poppins text-lg font-semibold mt-4 text-blue-500">
+              Hello, I'm Sarah
+            </h4>
+            <p class="font-roboto mt-4">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
               expedita cumque exercitationem voluptates placeat dolorem.
             </p>
             <img class="w-20 mx-auto mt-4" src="./img//header pic.png" alt="" />
             <a
-              class="inline-block mt-4 font-semibold bg-gray-900 border px-4 py-2 text-white dark:border-white"
+              class="font-poppins text-white inline-block mt-4 font-semibold bg-gray-900 px-4 py-2 rounded cursor-pointer transition-colors hover:bg-blue-500 dark:bg-blue-500 dark:hover:bg-white dark:hover:text-blue-500"
             >
               Subscribe and follow
             </a>
@@ -337,22 +385,24 @@
         <!-- Newsletter -->
         <section class="mt-10 p-0 sm:p-6 md:px-20 md:py-10 lg:p-0">
           <div
-            class="bg-gray-100 p-6 text-center dark:bg-gray-900 dark:text-white"
+            class="bg-gray-100 p-6 text-center text-gray-900 dark:bg-gray-900 dark:text-white shadow-md rounded-lg"
           >
             <h3
-              class="uppercase border-b border-gray-900 inline-block dark:border-white"
+              class="font-poppins text-lg font-semibold uppercase border-b border-gray-900 inline-block dark:border-white"
             >
               Newsletter
             </h3>
-            <h4 class="text-lg font-semibold mt-4">Get latest update</h4>
+            <h4 class="font-poppins text-lg font-semibold mt-4 text-blue-500">
+              Get latest update
+            </h4>
             <div class="mt-4">
-              <form action="">
+              <form class="font-roboto" action="">
                 <div
                   class="bg-white p-2.5 border dark:border-white dark:bg-gray-900 flex items-center justify-center"
                 >
-                  <i class="fas fa-user ml-6 mr-3"></i>
+                  <i class="fas fa-user ml-6 mr-3 text-blue-500"></i>
                   <input
-                    class="outline-none bg-transparent"
+                    class="outline-none bg-transparent dark:placeholder-white"
                     type="text"
                     placeholder="Enter your name"
                   />
@@ -360,9 +410,9 @@
                 <div
                   class="bg-white p-2.5 mt-4 border dark:border-white dark:bg-gray-900 flex items-center justify-center"
                 >
-                  <i class="fas fa-envelope ml-6 mr-3"></i>
+                  <i class="fas fa-envelope ml-6 mr-3 text-blue-500"></i>
                   <input
-                    class="outline-none bg-transparent"
+                    class="outline-none bg-transparent dark:placeholder-white"
                     type="text"
                     name=""
                     id=""
@@ -371,7 +421,7 @@
                 </div>
               </form>
               <button
-                class="w-full block mt-4 font-semibold bg-gray-900 px-4 py-2 text-white"
+                class="font-poppins rounded w-full block mt-4 font-semibold bg-gray-900 px-4 py-2 text-white cursor-pointer transition-colors hover:bg-blue-500 dark:bg-blue-500 dark:hover:bg-white dark:hover:text-blue-500"
                 type="submit"
               >
                 Submit
@@ -382,9 +432,11 @@
 
         <!-- Instagram -->
         <section class="mt-10 mt-10 p-0 sm:p-6 md:px-20 md:py-10 lg:p-0">
-          <div class="border border-gray-200 p-6 text-center dark:text-white">
+          <div
+            class="text-gray-900 border bg-white border-gray-200 p-6 text-center shadow-md rounded-lg dark:text-white dark:bg-gray-900 dark:border-gray-900"
+          >
             <h3
-              class="uppercase border-b border-gray-900 inline-block dark:border-white"
+              class="font-poppins text-lg font-semibold uppercase border-b border-gray-900 inline-block dark:border-white"
             >
               Instagram
             </h3>
@@ -404,7 +456,7 @@
               <img src="https://source.unsplash.com/random/300x308" alt="" />
             </div>
             <a
-              class="mt-4 font-semibold border-b border-gray-900 inline-block dark:border-white"
+              class="font-poppins mt-4 font-semibold text-gray-900 border-b border-gray-900 inline-block cursor-pointer transition-colors hover:text-blue-500 hover:border-blue-500 dark:border-white dark:text-white dark:hover:text-blue-500 dark:hover:border-blue-500"
             >
               See more
             </a>
@@ -413,33 +465,35 @@
 
         <!-- Categories -->
         <section class="mt-10 p-0 sm:p-6 md:px-20 md:py-10 lg:p-0">
-          <div class="border border-gray-200 p-6 text-center dark:text-white">
+          <div
+            class="text-white border border-gray-200 p-6 text-center bg-white shadow-md rounded-lg dark:bg-gray-900 dark:border-gray-900"
+          >
             <h3
-              class="uppercase border-b border-gray-900 inline-block dark:border-white"
+              class="font-poppins font-semibold text-gray-900 text-lg uppercase border-b border-gray-900 inline-block dark:border-white dark:text-white"
             >
               Categories
             </h3>
-            <div class="mt-4 text-left text-sm break-words dark:text-gray-900">
+            <div class="mt-4 text-left text-sm break-words dark:text-white">
               <button
-                class="inline-block py-1 px-3 rounded-full bg-gray-200 m-1 outline-none dark:bg-white"
+                class="bg-blue-500 inline-block py-1 px-3 rounded-full bg-gray-200 m-1 outline-none"
               >
                 Lorem <span>(4)</span>
               </button>
 
               <button
-                class="inline-block py-1 px-3 rounded-full bg-gray-200 m-1 outline-none"
+                class="bg-blue-500 inline-block py-1 px-3 rounded-full bg-gray-200 m-1 outline-none"
               >
                 Lorem Ipsum <span>(4)</span>
               </button>
 
               <button
-                class="inline-block py-1 px-3 rounded-full bg-gray-200 m-1 outline-none"
+                class="bg-blue-500 inline-block py-1 px-3 rounded-full bg-gray-200 m-1 outline-none"
               >
                 Lorem <span>(4)</span>
               </button>
 
               <button
-                class="inline-block py-1 px-3 rounded-full bg-gray-200 m-1 outline-none"
+                class="bg-blue-500 inline-block py-1 px-3 rounded-full bg-gray-200 m-1 outline-none"
               >
                 Lorem <span>(4)</span>
               </button>
@@ -449,26 +503,28 @@
 
         <!-- Popular Post -->
         <section class="mt-10 mt-10 p-0 sm:p-6 md:px-20 md:py-10 lg:p-0">
-          <div class="border border-gray-200 p-6 text-center dark:text-white">
+          <div
+            class="text-gray-900 bg-white border border-gray-200 p-6 text-center shadow-md rounded-lg dark:bg-gray-900 dark:border-gray-900"
+          >
             <div class="pb-2">
               <h3
-                class="uppercase border-b border-gray-900 inline-block dark:border-white"
+                class="font-poppins text-lg font-semibold uppercase border-b border-gray-900 inline-block dark:border-white dark:text-white"
               >
                 Popular Post
               </h3>
               <div
-                class="flex mt-4 border-b border-gray-200 pb-2 dark:border-gray-500"
+                class="flex mt-6 border-b border-gray-200 pb-2 dark:border-gray-500"
               >
                 <img
                   class="w-20 h-20"
                   src="https://source.unsplash.com/random/500x500"
                   alt=""
                 />
-                <div class="flex flex-col justify-center">
+                <div class="flex flex-col justify-center dark:text-white">
                   <h4 class="text-lg font-semibold ml-4 text-left">
                     Lorem Ipsum
                   </h4>
-                  <p class="ml-4 text-left">Lorem Ipsum</p>
+                  <p class="font-roboto ml-4 text-left">Lorem Ipsum</p>
                 </div>
               </div>
               <div
@@ -479,11 +535,11 @@
                   src="https://source.unsplash.com/random/500x501"
                   alt=""
                 />
-                <div class="flex flex-col justify-center">
+                <div class="flex flex-col justify-center dark:text-white">
                   <h4 class="text-lg font-semibold ml-4 text-left">
                     Lorem Ipsum
                   </h4>
-                  <p class="ml-4 text-left">Lorem Ipsum</p>
+                  <p class="font-roboto ml-4 text-left">Lorem Ipsum</p>
                 </div>
               </div>
               <div class="flex mt-4">
@@ -492,11 +548,11 @@
                   src="https://source.unsplash.com/random/500x502"
                   alt=""
                 />
-                <div class="flex flex-col justify-center">
+                <div class="flex flex-col justify-center dark:text-white">
                   <h4 class="text-lg font-semibold ml-4 text-left">
                     Lorem Ipsum
                   </h4>
-                  <p class="ml-4 text-left">Lorem Ipsum</p>
+                  <p class="font-roboto ml-4 text-left">Lorem Ipsum</p>
                 </div>
               </div>
             </div>
@@ -510,14 +566,21 @@
       <div class="container mx-auto max-w-screen-xl text-center">
         <div class="flex justify-center items-center">
           <div class="h-px w-20 bg-white"></div>
-          <h2 class="mx-4 text-2xl font-semibold text-white">Watch My Video</h2>
+          <h2 class="font-poppins mx-4 text-2xl font-semibold text-white">
+            Watch My Video
+          </h2>
           <div class="h-px w-20 bg-white"></div>
         </div>
         <div class="flex flex-col justify-center items-center">
-          <video class="mt-4 outline-none" width="820" height="458" controls>
+          <video
+            class="mt-4 outline-none rounded"
+            width="820"
+            height="458"
+            controls
+          >
             <source src="./video/must watch.mp4" type="video/mp4" />
           </video>
-          <p class="italic text-white mt-4 mx-10 sm:mx-20">
+          <p class="font-roboto italic text-white mt-4 mx-10 sm:mx-20">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem in
             blanditiis nisi sunt mollitia non, perferendis unde, amet eaque vel
             debitis minus rem error fugit veritatis officia voluptate assumenda
@@ -530,7 +593,7 @@
     <!-- Gallery with Sidebar -->
 
     <div
-      class="container mx-auto max-w-screen-xl grid grid-cols-1 lg:grid-cols-7 gap-4 py-20"
+      class="container mx-auto max-w-screen-xl grid grid-cols-1 lg:grid-cols-7 gap-4 py-20 px-4 lg:px-0"
     >
       <!-- Main -->
       <main class="col-auto lg:col-span-5">
@@ -583,15 +646,15 @@
           </figure>
 
           <button
-            class="block mx-auto mt-4 sm:absolute sm:mt-0 top-1/2 left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1 shadow-lg bg-white text-gray-900 px-4 py-2 rounded dark:bg-gray-900 dark:text-white"
+            class="font-poppins font-semibold block mx-auto mt-4 sm:absolute sm:mt-0 top-1/2 left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1 shadow-lg bg-gray-900 text-white px-4 py-2 rounded transition-colors hover:bg-blue-500 hover:text-white dark:bg-blue-500 dark:text-white dark:hover:bg-white dark:hover:text-blue-500"
           >
             View My Collections
           </button>
         </section>
         <div
-          class="mt-4 border-l-4 border-gray-200 p-4 shadow-sm bg-white dark:bg-gray-900 dark:text-white mr-0 lg:mr-4"
+          class="mt-4 border-l-4 border-gray-200 p-4 shadow-lg bg-white dark:bg-gray-900 dark:text-white mr-0 lg:mr-4"
         >
-          <p class="italic">
+          <p class="font-roboto italic">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
             ullam modi aspernatur veritatis quae. Alias quod quia, dicta quidem
             reprehenderit, sequi eaque, eius consectetur fuga laborum
@@ -603,39 +666,59 @@
         <!-- Social Icons -->
         <section class="mt-10 p-0 sm:p-6 md:px-20 md:py-10 lg:p-0">
           <div
-            class="bg-gray-200 p-6 text-center dark:bg-gray-900 dark:text-white"
+            class="bg-gray-200 text-gray-900 p-6 text-center dark:bg-gray-900 dark:text-white shadow-md rounded-lg"
           >
             <h3
-              class="uppercase border-b border-gray-900 inline-block dark:border-white"
+              class="font-poppins font-semibold text-lg uppercase border-b border-gray-900 inline-block dark:border-white"
             >
               Follow me
             </h3>
             <div
               class="text-gray-900 flex items-center justify-center mt-4 dark:text-white"
             >
-              <i class="fab fa-facebook-f mr-4"></i>
-              <i class="fab fa-twitter mr-4"></i>
-              <i class="fab fa-instagram mr-4"></i>
-              <i class="fab fa-pinterest-p mr-4"></i>
-              <i class="fab fa-youtube mr-"></i>
+              <a href="#"
+                ><i
+                  class="fab fa-facebook-f mr-4 cursor-pointer hover:text-blue-500"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fab fa-twitter mr-4 cursor-pointer hover:text-blue-500"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fab fa-instagram mr-4 cursor-pointer hover:text-blue-500"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fab fa-pinterest-p mr-4 cursor-pointer hover:text-blue-500"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fab fa-youtube cursor-pointer hover:text-blue-500"
+                ></i
+              ></a>
             </div>
           </div>
         </section>
         <!-- Ads -->
         <section class="mt-10 p-0 sm:p-6 md:px-20 md:py-10 lg:p-0">
           <div
-            class="bg-gray-200 p-6 text-center dark:bg-gray-900 dark:text-white"
+            class="bg-gray-200 text-gray-900 p-6 text-center dark:bg-gray-900 dark:text-white"
           >
             <h3
-              class="uppercase border-b border-gray-900 inline-block dark:border-white"
+              class="font-poppins font-semibold text-lg uppercase border-b border-gray-900 inline-block dark:border-white"
             >
               Advertisement
             </h3>
-            <h4 class="text-lg font-semibold mt-4">
+            <h4 class="font-poppins text-md font-semibold mt-4">
               Lorem ipsum dolor sit amet consectetur.
             </h4>
             <a
-              class="inline-block mt-4 px-4 py-2 bg-gray-900 text-white border dark:border-white"
+              class="font-poppins font-semibold rounded inline-block mt-4 px-4 py-2 bg-gray-900 text-white cursor-pointer transition-colors hover:bg-blue-500 dark:bg-blue-500 dark:hover:text-blue-500 dark:hover:bg-white"
               href="#"
               >Buy Now</a
             >
@@ -651,37 +734,37 @@
       >
         <div class="flex justify-center items-center">
           <a
-            class="inline-block w-5 h-5 p-4 m-2.5 rounded-full bg-white flex justify-center items-center"
+            class="inline-block w-5 h-5 p-4 m-2.5 rounded-full bg-white flex justify-center items-center transition-colors hover:bg-blue-500 hover:text-white"
             href="#"
             ><i class="fab fa-facebook-f"></i
           ></a>
           <a
-            class="inline-block w-5 h-5 p-4 m-2.5 rounded-full bg-white flex justify-center items-center"
+            class="inline-block w-5 h-5 p-4 m-2.5 rounded-full bg-white flex justify-center items-center transition-colors hover:bg-blue-500 hover:text-white"
             href="#"
             ><i class="fab fa-twitter"></i
           ></a>
           <a
-            class="inline-block w-5 h-5 p-4 m-2.5 rounded-full bg-white flex justify-center items-center"
+            class="inline-block w-5 h-5 p-4 m-2.5 rounded-full bg-white flex justify-center items-center transition-colors hover:bg-blue-500 hover:text-white"
             href="#"
             ><i class="fab fa-instagram"></i
           ></a>
           <a
-            class="inline-block w-5 h-5 p-4 m-2.5 rounded-full bg-white flex justify-center items-center"
+            class="inline-block w-5 h-5 p-4 m-2.5 rounded-full bg-white flex justify-center items-center transition-colors hover:bg-blue-500 hover:text-white"
             href="#"
             ><i class="fab fa-pinterest"></i
           ></a>
           <a
-            class="inline-block w-5 h-5 p-4 m-2.5 rounded-full bg-white flex justify-center items-center"
+            class="inline-block w-5 h-5 p-4 m-2.5 rounded-full bg-white flex justify-center items-center transition-colors hover:bg-blue-500 hover:text-white"
             href="#"
             ><i class="fab fa-youtube"></i
           ></a>
         </div>
-        <p class="text-white mt-4 text-center">
+        <p class="font-roboto text-white mt-4 text-center">
           Copyright © 2021. All rights reserved. Designed by Eternus Global.
         </p>
         <div>
           <a
-            class="text-white flex flex-col items-center justify-center mt-4 scroll-to-top"
+            class="font-roboto text-white flex flex-col items-center justify-center mt-4 scroll-to-top"
             href=""
             ><i class="fas fa-angle-double-up"></i
             ><button>Back to top</button></a
@@ -689,6 +772,12 @@
         </div>
       </div>
     </footer>
+
+    <div
+      class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-blue-500 text-white flex justify-center items-center cursor-pointer shadow-xl switch-mode transition-colors duration-500 hover:text-blue-500 hover:bg-white dark:bg-white dark:text-blue-500 dark:hover:bg-blue-500 dark:hover:text-white"
+    >
+      <i class="fas fa-moon"></i>
+    </div>
 
     <script src="./js/index.js"></script>
   </body>
